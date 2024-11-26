@@ -11,7 +11,7 @@ namespace ingatlan_oroklodes
        
         protected int ar,terulet;
         protected string cim, tulajdonos, tipus;
-        protected string ifk;
+        
         public int Ar
         {
             get { return ar; }
