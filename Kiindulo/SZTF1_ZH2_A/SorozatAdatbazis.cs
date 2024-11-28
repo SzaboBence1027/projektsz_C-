@@ -10,14 +10,13 @@ namespace SZTF1_ZH2_A
     class SorozatAdatbazis
     {
         private Epizod[] epizodok;
-        public double AtlagNezoSzam { get; }
+        public double AtlagNezoSzam { get { return epizodok.Sum(x => x.NezoSzam) / Convert.ToDouble(epizodok.Length); } }
         
 
         public SorozatAdatbazis(string fajlNev)
         {
             FajlBeolvasas(fajlNev);
             Beallit();
-            AtlagNezoSzam = epizodok.Sum(x => x.NezoSzam) / epizodok.Length;
             Mentes("KimentetAdatok.txt");
 
         }
@@ -100,7 +99,22 @@ namespace SZTF1_ZH2_A
 
         /*public Rendező[] RendezokAdatai()
         {
-            Rendező[] rendezo_adatok = new Rendező[epizodok.Distinct().Count()];
+            List<string> rendezo_nevek = new List<string>();
+            for (int i = 0; i < epizodok.Count(); i++)
+            {
+                if (!rendezo_nevek.Contains(epizodok[i].Rendezo) )
+                {
+                    rendezo_nevek.Add(epizodok[i].Rendezo);
+                }
+            }
+            Rendező[] rendezok = new Rendező[rendezo_nevek.Count()];
+
+            for (int i = 0; i < rendezok.Length; i++)
+            {
+                Rendező r = new Rendező(epizodok.Distinct().Where(x=>x.Cim&&rendezo_nevek[i]));
+            }
+
+            
         }*/
         
         public int Zoldijjasznapok()

@@ -15,6 +15,12 @@ namespace SZTF1_ZH2_A
             Console.WriteLine("Átlagos nézőszám"+adatbazis.AtlagNezoSzam+"Millió fő");
             Console.WriteLine("Legnézettebb epizód adatai:\n\t"+adatbazis.Legnezetteb().ToString());
             Console.WriteLine("Első és utolsó epizód között eltelt napok száma:"+adatbazis.Zoldijjasznapok()+"nap");
+            Rendező[] rendezok = adatbazis.RendezokAdatai();
+            for (int i = 0; i < rendezok.Length; i++)
+            {
+                Console.WriteLine(rendezok[i]);
+            }
+            
             Console.ReadKey();
         }
     }
