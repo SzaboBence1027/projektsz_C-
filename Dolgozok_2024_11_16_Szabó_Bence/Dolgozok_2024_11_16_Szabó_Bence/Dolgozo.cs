@@ -16,7 +16,7 @@ namespace Dolgozok_2024_11_16_Szabó_Bence
 
             set //íráskor fut le, value paraméterben lesz az átadandó érték
             {
-                if (value!="")
+                if (value!=""|| value.Trim().Contains(' '))
                 {
                     nev = value;
                 }
@@ -37,7 +37,7 @@ namespace Dolgozok_2024_11_16_Szabó_Bence
                 }
                 else if (value<=-1)
                 {
-                    throw new Exception("NEm lehet negatív fizetes");
+                    throw new Exception("Nem lehet negatív fizetes");
                 }
                 fizetes = value;
             }

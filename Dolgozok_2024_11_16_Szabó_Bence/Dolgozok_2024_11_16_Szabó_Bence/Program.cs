@@ -10,15 +10,25 @@ namespace Dolgozok_2024_11_16_Szabó_Bence
     {
         static void Main(string[] args)
         {
-            List<Dolgozo> dolgozok = new List<Dolgozo>();
-            dolgozok = Irodai_dolgozo_generator(dolgozok,5);
-            dolgozok= Gyari_dolgozo_generator(dolgozok,5);
-           
-
-            for (int i = 0; i < dolgozok.Count; i++)
+            try
             {
-                Console.WriteLine(dolgozok[i].ToString()); 
+                List<Dolgozo> dolgozok = new List<Dolgozo>();
+                dolgozok = Irodai_dolgozo_generator(dolgozok, 5);
+                dolgozok = Gyari_dolgozo_generator(dolgozok, 5);
+                
+
+
+                for (int i = 0; i < dolgozok.Count; i++)
+                {
+                    Console.WriteLine(dolgozok[i].ToString());
+                }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+               
+            }
+            
             Console.ReadKey();
             /*
              Hibás pédlányokra példák 

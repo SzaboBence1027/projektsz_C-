@@ -30,7 +30,7 @@ namespace Dolgozok_2024_11_16_Szabó_Bence
 
         public override double Premium()
         {
-            if (MuszakokSzama>3)
+            if (MuszakokSzama>=3)
             {
                 return Fizetes * 1.05;
             }
