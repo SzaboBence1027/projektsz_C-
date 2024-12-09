@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace interface_2024_12_09
 {
-    class Bankartya : IFizetesMod
+    class Bankartya:IFizetesMod
     {
-        public float Koltseg(float osszeg)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
