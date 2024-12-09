@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace interface_2024_12_09
 {
-    class FolyoSzamla:Szamla
+    class MegtakaritasSzamla:Szamla
     {
-        public FolyoSzamla(string szamlaszam,string tulajdonos,int egyenleg):base(szamlaszam,tulajdonos,egyenleg)
+        public MegtakaritasSzamla(string szamlaszam, string tulajdonos, int egyenleg) : base(szamlaszam, tulajdonos, egyenleg)
         {
 
         }
 
         public override float KamatSzamitas()
         {
-          return this.Egyenleg * 0.003f;
+            return this.Egyenleg * 0.02f;
         }
     }
 }

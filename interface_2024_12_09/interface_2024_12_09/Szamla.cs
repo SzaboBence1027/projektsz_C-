@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 namespace interface_2024_12_09
 {
-    class MegtakaritasiSzamla:ISzamla,IFizetesMod
+    abstract class Szamla:ISzamla,IFizetesMod
     {
         string Szamla_tulajdonos;
         string Szamla_Szam;
         float egyenleg;
 
-        public string Szamlaszam { get => Szamla_Szam; }
+
+        public string Szamlaszam  { get => Szamla_Szam; }
         public string Tulajdonos { get => Szamla_tulajdonos; }
         public float Egyenleg { get => egyenleg; }
 
 
-        public MegtakaritasiSzamla(string Szamla_tulajdonos, string Szamla_Szam, float egyenleg)
+        public Szamla(string Szamla_tulajdonos,string Szamla_Szam,float egyenleg)
         {
             this.Szamla_tulajdonos = Szamla_tulajdonos;
             this.Szamla_Szam = Szamla_Szam;
@@ -31,14 +32,15 @@ namespace interface_2024_12_09
 
         public void Kivonas(float osszeg)
         {
-            egyenleg -= osszeg;
+            if (this.egyenleg>=osszeg)
+            {
+                egyenleg -= osszeg;
+
+            }
         }
 
-        public float KamatSzamitas()
-        {
-            float kamat = (float)25;
-            return egyenleg = egyenleg * kamat;
-        }
+        abstract public float KamatSzamitas();
+        
         public float Koltseg(float osszeg)
         {
 

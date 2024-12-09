@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Folyoszamla.cs" />
+    <Compile Include="Bankartya.cs" />
+    <Compile Include="FolyoSzamla.cs" />
+    <Compile Include="MegtakaritasSzamla.cs" />
+    <Compile Include="Szamla.cs" />
     <Compile Include="IFizetesMod.cs" />
     <Compile Include="ISzamla.cs" />
     <Compile Include="ITranzakcio.cs" />
-    <Compile Include="MegtakaritasiSzamla.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utalas.cs" />
