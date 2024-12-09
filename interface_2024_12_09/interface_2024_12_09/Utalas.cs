@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace interface_2024_12_09
 {
-    class Utalas:ITranzakcio
+    class Utalas:IFizetesMod
     {
+        /*
+        enum nev { };
+        public Utalas()
+        {
+            nev = Nev.Bankártya;
+        }*/
 
-
-    }df
+    }
 }
