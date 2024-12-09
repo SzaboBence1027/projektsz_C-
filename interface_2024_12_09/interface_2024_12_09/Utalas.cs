@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace interface_2024_12_09
 {
-    class Utalas : IFizetesMod
+    class Utalas:IFizetesMod
     {
         /*
         enum nev { };
@@ -14,9 +14,6 @@ namespace interface_2024_12_09
         {
             nev = Nev.Bankártya;
         }*/
-        public float Koltseg(float osszeg)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }
