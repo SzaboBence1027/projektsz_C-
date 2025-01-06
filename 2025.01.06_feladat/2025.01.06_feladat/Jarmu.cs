@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace _2025._01._06_feladat
 {
+    
    abstract class Jarmu
     {
         string marka, tipus;
         int gyartasi_ev;
-
+        protected static Random rnd;
         public string Marka { get=>marka;  }
         public string Tipus { get => tipus; }
         public int Gyartasi_Ev { get => gyartasi_ev; }
@@ -26,7 +27,7 @@ namespace _2025._01._06_feladat
 
         public override string ToString()
         {
-            return $"Márak {this.marka} Tipus:{this.tipus} gyartasi ev: {this.gyartasi_ev} üzemben van {this.UzembenVan()} ";
+            return $"Márka {this.marka} Tipus:{this.tipus} gyartasi ev: {this.gyartasi_ev} üzemben van {this.UzembenVan()} ";
         }
     }
 }
