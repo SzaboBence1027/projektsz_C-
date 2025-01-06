@@ -9,7 +9,7 @@ namespace _241209_1
     class Atutalas : IFizetesiMod
     {
         string nev;
-        public string Nev { get => nev; }
+        public string Nev{ get => nev; }
 
         public Atutalas()
         {
