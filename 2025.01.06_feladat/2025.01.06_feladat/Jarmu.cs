@@ -22,6 +22,7 @@ namespace _2025._01._06_feladat
             this.marka = marka;
             this.tipus = tipus;
             this.gyartasi_ev = gyartasi_ev;
+            rnd = new Random();
         }
         public abstract bool UzembenVan();
 

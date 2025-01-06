@@ -17,9 +17,13 @@ namespace _2025._01._06_feladat
             Auto auto = new Auto("Citroen", "Picasszo",2006,5,false);
             Motor motor = new Motor("Kawasaki", "Ninja", 2019, 1300);
             Bicikli bickili = new Bicikli("decatlon","Riverside",2016,false);
+            Roller roller = new Roller(true);
+            Console.WriteLine(roller.ToString());
             jarmuvek.Add(auto);
             jarmuvek.Add(motor);
             jarmuvek.Add(bickili);
+            roller.Berel();
+            
             foreach (var item in jarmuvek)
             {
                 if (item is IBerelheto)
@@ -37,7 +41,7 @@ namespace _2025._01._06_feladat
                 }
             }
             int osszBerletkoltseg = 0;
-            /*for (int i = 0; i < jarmuvek.Count; i++)
+            for (int i = 0; i < jarmuvek.Count; i++)
             {
                 if (jarmuvek[i]is IBerelheto)
                 {
@@ -45,7 +49,7 @@ namespace _2025._01._06_feladat
                 }
                
             }
-            Console.WriteLine(osszBerletkoltseg);*/
+            Console.WriteLine(osszBerletkoltseg);
             int uzemben_levo = 0;
             foreach (Jarmu j in jarmuvek)
             {
