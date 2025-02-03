@@ -1,0 +1,26 @@
+﻿<Window x:Class="wpf_2025_01_13.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_2025_01_13"
+        mc:Ignorable="d"
+        Title="Első wpf oldalunk" Height="450" Width="800">
+    <Grid x:Name="gr_tarolo">
+        <Label Content="Neved:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,23,0,0"/>
+        <TextBox x:Name="TB_Nev"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84,28,0,0" Width="100"/>
+        <Button x:Name="b_gomb" Content="Nyomd Meg" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="239,26,0,0" Background="Blue" TextOptions.TextHintingMode="Fixed" Click="b_gomb_Click"/>
+        <Label x:Name="lable_kiiras" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="174,125,0,0" RenderTransformOrigin="1.207,1.283"/>
+        <RadioButton x:Name="Rb_Ferfi" Content="Férfi" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84,98,0,0" Checked="Rb_Ferfi_Checked"/>
+        <RadioButton  x:Name="Rb_No" Content="Nő" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="229,98,0,0" Checked="Rb_No_Checked"/>
+        <TextBox  x:Name="Tb_Szam1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="84,169,0,0" PreviewTextInput="PreviewTextInput"/>
+        <TextBox x:Name="Tb_Szam2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="288,169,0,0" PreviewTextInput="PreviewTextInput"/>
+        <TextBox x:Name="Tb_Szam3" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="472,169,0,0"  PreviewTextInput="PreviewTextInput"/>
+        <RadioButton x:Name="Rb_osszeadas" Content="Osszeadás" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84,267,0,0" Checked="Rb_Ferfi_Checked"/>
+        <RadioButton x:Name="Rb_szorzas" Content="Szorzás" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="222,267,0,0" Checked="Rb_Ferfi_Checked"/>
+        <RadioButton x:Name="Rb_AVG" Content="AVG" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="351,267,0,0" Checked="Rb_Ferfi_Checked"/>
+        <Button x:Name="b_szamolas" Content="Számolás" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="189,328,0,0" TextOptions.TextHintingMode="Fixed" Click="b_szamolas_Click"/>
+        <Label x:Name="Lb_eredmeny" Content="Eredmény:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84,366,0,0"/>
+
+    </Grid>
+</Window>
