@@ -1,0 +1,23 @@
+﻿<Window x:Class="_2025._02._03_órai_munka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2025._02._03_órai_munka"
+        mc:Ignorable="d"
+        Title="Hallgatok" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="ltb_halgatok" Grid.Column="0" Background="BurlyWood" FontSize="20"/>
+        <StackPanel Grid.Column="1">
+            <Button x:Name="btn_hozzaad" Height="50" Content="Hozzáadas" Margin="10" Click="btn_hozzaad_Click"></Button>
+            <Button x:Name="btn_mod" Height="50" Content="Módositas" Margin="10" Click="btn_mod_Click"></Button>
+            <Button x:Name="btn_torles" Height="50" Content="Törlés" Margin="10" Click="btn_torles_Click"></Button>
+        </StackPanel>
+
+    </Grid>
+</Window>

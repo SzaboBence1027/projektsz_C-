@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:jelszo_2025._02._03"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid MouseEnter="OnMouseEnterHandler">
+
+        <Label Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,32,0,0" Height="44" Width="63"  />
+        <Label Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="332,32,0,0" Height="44" Width="63"/>
+        <Label Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="620,32,0,0" Height="44" Width="63"/>
+        <Label Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,171,0,0" Height="44" Width="63"/>
+        <Label Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="332,171,0,0" Height="44" Width="63" />
+        <Label Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="620,171,0,0" Height="44" Width="63"/>
+        <Label Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,316,0,0" Height="44" Width="63"/>
+        <Label Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="332,316,0,0" Height="44" Width="63"/>
+        <Label Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="620,316,0,0" Height="44" Width="63"/>
+       
     </Grid>
 </Window>

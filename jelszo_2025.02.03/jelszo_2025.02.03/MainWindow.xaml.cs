@@ -18,11 +18,27 @@ namespace jelszo_2025._02._03
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+    
     public partial class MainWindow : Window
     {
+        int holtartunk = 0;
+        string PIN = "2462";
         public MainWindow()
         {
             InitializeComponent();
+           
+            
+        }
+       private void OnMouseEnterHandler(object sender, MouseEventArgs e)
+        {
+            Label l = sender as Label;
+            
+            if (l.Content.ToString()==PIN[holtartunk].ToString())
+            {
+                holtartunk++;
+                l.Background = Brushes.Red;
+            }
         }
     }
 }
