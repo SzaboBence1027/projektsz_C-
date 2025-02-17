@@ -1,0 +1,25 @@
+﻿<Window x:Class="Dolgozat_SzabóBence_2025_02_10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dolgozat_SzabóBence_2025_02_10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lb_Termekek" Grid.Column="0" HorizontalAlignment="Left" Height="409" VerticalAlignment="Top" Width="386" SelectionMode="Multiple"/>
+        <StackPanel Grid.Column="1">
+            <Button x:Name="btn_hozzaad" Height="50" Content="Hozzáadás" Margin="10" Click="btn_hozzaad_Click"></Button>
+            <Button x:Name="btn_szerkesztes" Height="50" Content="Szerkesztés" Margin="10" Click="btn_szerkesztes_Click" ></Button>
+            <Button x:Name="btn_torles" Height="50" Content="Törlés" Margin="10" Click="btn_torles_Click"></Button>
+            <Button x:Name="btn_minden_torles" Height="50" Content=" Minden Törlés" Margin="10" Click="btn_minden_torles_Click"></Button>
+            <Button x:Name="btn_eladva" Height="50" Content="Eladva" Margin="10" Click="btn_eladva_Click"></Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
