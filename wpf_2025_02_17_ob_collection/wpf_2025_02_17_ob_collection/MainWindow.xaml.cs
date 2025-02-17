@@ -20,9 +20,22 @@ namespace wpf_2025_02_17_ob_collection
     /// </summary>
     public partial class MainWindow : Window
     {
+        Auto a;
         public MainWindow()
         {
             InitializeComponent();
+            a=new Auto("ISA-417",101000);
+            this.DataContext = a;
+        }
+
+        private void btn_10_Click(object sender, RoutedEventArgs e)
+        {
+            a.KmOra += 10;
+        }
+
+        private void btn_100_Click(object sender, RoutedEventArgs e)
+        {
+            a.KmOra += 100;
         }
     }
 }

@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label FontSize="40" Content="{Binding Rendszam}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="48,45,0,0" />
+        <Label FontSize="40" Content="{Binding KmOra}" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,45,305,0" />
+        <Button x:Name="btn_10" Content="+10" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="48,198,0,0" Click="btn_10_Click"/>
+        <Button  x:Name="btn_100" Content="+100" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="197,198,0,0" Click="btn_100_Click"/>
+
     </Grid>
 </Window>
