@@ -6,7 +6,27 @@
         xmlns:local="clr-namespace:órai_munka_2025_02_17"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Height="419" VerticalAlignment="Bottom">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="ltx_szemelyek" Grid.Row="0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Background="Aquamarine" Width="200">
+                        <Label ContentStringFormat="Név: {0}" Content="{Binding Nev}"/>
+                        <Label ContentStringFormat="Telefonszám: {0}" Content="{Binding Telefonszam}"/>
+                        <Label ContentStringFormat="Életkor: {0}" Content="{Binding Eletkor}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+        </ListBox>
+        <StackPanel Grid.Column="1" Background="AntiqueWhite">
+            <Button x:Name="btn_hozzaad" Margin="10" Height="40" Content="Hozzádadás" Click="btn_hozzaad_Click"></Button>
+            <Button x:Name="btn_mod" Margin="10" Height="40" Content="Módosítás" Click="btn_mod_Click"></Button>
+            <Button x:Name="btn_torles" Margin="10" Height="40" Content="Törlés" Click="btn_torles_Click"></Button>
+        </StackPanel>
     </Grid>
 </Window>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="órai_munka_2025_02_17.SzemelyKarbantarto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:órai_munka_2025_02_17"
+        mc:Ignorable="d"
+        Title="SzemelyKarbantarto" Height="450" Width="327.869">
+    <Grid>
+        <StackPanel>
+            <Label Height="40" Content="Név" Background="GreenYellow"/>
+            <TextBox x:Name="tb_nev" Height="40" FontSize="30" Text="{Binding Nev,UpdateSourceTrigger=Explicit}"/>
+            <Label Height="40" Content="telefonszam" Background="GreenYellow"/>
+            <TextBox x:Name="tb_telefonszam" Height="40" FontSize="30" Text="{Binding Telefonszam,UpdateSourceTrigger=Explicit}"/>
+            <Label Height="40" Content="Eletkor" Background="GreenYellow"/>
+            <TextBox x:Name="tb_eletkor" Height="40" FontSize="30" Text="{Binding Eletkor,UpdateSourceTrigger=Explicit}" />
+            <Button Height="40" Content="Mentés" Width="300" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
