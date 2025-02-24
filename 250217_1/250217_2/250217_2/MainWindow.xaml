@@ -1,0 +1,21 @@
+﻿<Window x:Class="_250217_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_250217_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="86*"/>
+        </Grid.ColumnDefinitions>
+        <Label FontSize="40" Content="{Binding Rendszam}" HorizontalAlignment="Left" Margin="2,148,0,0" VerticalAlignment="Top" Height="59" Width="183" Grid.Column="2"/>
+        <Label FontSize="40" Content="{Binding KmOra}" HorizontalAlignment="Left" Margin="2,212,0,0" VerticalAlignment="Top" Height="58" Width="183" Grid.Column="2"/>
+        <Button x:Name="btn_10" FontSize="30" Content="+10" HorizontalAlignment="Left" Margin="49,289,0,0" VerticalAlignment="Top" Width="111" Height="43" Click="btn_10_Click" Grid.ColumnSpan="3"/>
+        <Button x:Name="btn_100" FontSize="30" Content="+100" HorizontalAlignment="Left" Margin="74,289,0,0" VerticalAlignment="Top" Width="111" Height="43" Click="btn_100_Click" Grid.Column="2"/>
+
+    </Grid>
+</Window>
