@@ -11,23 +11,24 @@
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        <ListBox x:Name="ltb_feladatok" HorizontalAlignment="Left" Height="409" VerticalAlignment="Top" Width="386" Grid.Column="0">
+        <ListBox x:Name="ltb_feladatok" HorizontalAlignment="Left" Height="409" VerticalAlignment="Top" Width="386" Grid.Column="0" SelectionMode="Multiple">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Background="PowderBlue" Width="200">
                         <Label ContentStringFormat="Feladat nev: {0}" Content="{Binding Nev}"/>
                         <Label ContentStringFormat="Leiras: {0}" Content="{Binding Leiras}"/>
                         <Label ContentStringFormat="Határidő: {0}" Content="{Binding Hatarido}"/>
+                        <Label ContentStringFormat="Kesz: {0}" Content="{Binding Kesz}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <StackPanel Grid.Column="1" Background="Aqua">
+        <StackPanel Grid.Column="1">
             <Button x:Name="btn_hozzaad" Margin="10" Height="40" Content="Hozzaadas" Click="btn_hozzaad_Click"  />
-            <Button x:Name="btn_szerkeszt" Margin="10" Height="40" Content="Szerkesztés"  />
-            <Button x:Name="btn_torol" Margin="10" Height="40" Content="Törlés"  />
-            <Button x:Name="btn_minden_torles" Margin="10" Height="40" Content="Minden Törlése"  />
-            <Button x:Name="btn_kesz" Margin="10" Height="40" Content="Teljesitett a feladat"  />
+            <Button x:Name="btn_szerkeszt" Margin="10" Height="40" Content="Szerkesztés" Click="btn_szerkeszt_Click"  />
+            <Button x:Name="btn_torol" Margin="10" Height="40" Content="Törlés" Click="btn_torol_Click"  />
+            <Button x:Name="btn_minden_torles" Margin="10" Height="40" Content="Minden Törlése" Click="btn_minden_torles_Click"  />
+            <Button x:Name="btn_kesz" Margin="10" Height="40" Content="Teljesitett a feladat" Click="btn_kesz_Click"  />
         </StackPanel>
     </Grid>
 </Window>

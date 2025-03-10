@@ -14,7 +14,9 @@
             <TextBox x:Name="tb_leiras" Height="40" FontSize="30" Text="{Binding Leiras, UpdateSourceTrigger=Explicit}"/>
             <Label Height="40" Content="Hatarido" Background="Green" />
             <TextBox x:Name="tb_hatarido" Height="40" FontSize="30" Text="{Binding Hatarido, UpdateSourceTrigger=Explicit}"/>
-            <Button x:Name="btn_mentes" Content="Mentés" Height="40" Margin="10,80,10,0" FontSize="26" Click="btn_mentes_Click"/>
+            <CheckBox x:Name="cbx_kesz" Content="Kész" IsChecked="{Binding Kesz,UpdateSourceTrigger=Explicit}"/>
+            <Button x:Name="btn_mentes" Content="Mentés" Height="40" Margin="10,80,10,0" FontSize="26" Click="btn_mentes_Click" />
+            
         </StackPanel>
     </Grid>
 </Window>

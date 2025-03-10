@@ -26,5 +26,27 @@ namespace _2025_02_24_órai_munka
             this.feladat= new Feladat();
             this.DataContext = feladat;
         }
+        public Feladatszerkesztő(Feladat f)
+        {
+            InitializeComponent();
+            this.feladat = f;
+            this.DataContext = feladat;
+        }
+
+        private void btn_mentes_Click(object sender, RoutedEventArgs e)
+        {
+            BindingExpression be = tb_nev.GetBindingExpression(TextBox.TextProperty);
+            be.UpdateSource();
+
+            be = tb_leiras.GetBindingExpression(TextBox.TextProperty);
+            be.UpdateSource();
+
+            be = tb_hatarido.GetBindingExpression(TextBox.TextProperty);
+            be.UpdateSource();
+            
+            be= cbx_kesz.GetBindingExpression(CheckBox.IsCheckedProperty);
+            be.UpdateSource();
+            this.DialogResult = true;
+        }
     }
 }

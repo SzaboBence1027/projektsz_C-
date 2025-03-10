@@ -1,0 +1,36 @@
+﻿<Window x:Class="_2024_03_03_Dolgozat_Szabó_Bence.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2024_03_03_Dolgozat_Szabó_Bence"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button x:Name="btn_hozzaad" Margin="10" Height="40" Content="Új Könyv Hozzaadas" Click="btn_hozzaad_Click"  />
+            <Button x:Name="btn_szerkeszt" Margin="10" Height="40" Content="Könyv Szerkesztés" Click="btn_szerkeszt_Click" />
+            <Button x:Name="btn_torol" Margin="10" Height="40" Content="Törlés" Click="btn_torol_Click"   />
+            <Button x:Name="btn_kesz" Margin="10" Height="40" Content="Elolvasott Könyv" Click="btn_kesz_Click"   />
+        </StackPanel>
+
+        <ListBox x:Name="ltb_konyvek" Grid.Column="1" SelectionMode="Multiple">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Label ContentStringFormat="Könyv Cim: {0}" Content="{Binding Cim}"/>
+                        <Label ContentStringFormat="Szerzo: {0}" Content="{Binding Szerzo}"/>
+                        <Label ContentStringFormat="Kategoria {0}" Content="{Binding Kategoria}"/>
+                        <Label ContentStringFormat="Elolvasott {0}" Content="{Binding Olvasott}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            
+        </ListBox>
+
+    </Grid>
+</Window>

@@ -1,0 +1,38 @@
+﻿<Window x:Class="_2024_03_03_Dolgozat_Szabó_Bence.KonyvSzerkesztő"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2024_03_03_Dolgozat_Szabó_Bence"
+        mc:Ignorable="d"
+        Title="KonyvSzerkesztő" Height="450" Width="500">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Label Content="Könyv Cím:" Background="Wheat" Height="50" FontSize="25"/>
+            <TextBox x:Name="tbx_Cim"  Height="30" Text="{Binding Cim, UpdateSourceTrigger=Explicit}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Label Content="Könyv Szerző:" Background="Wheat" Height="50" FontSize="25"/>
+            <TextBox x:Name="tbx_Szerzo" Text="{Binding Szerzo, UpdateSourceTrigger=Explicit}"  Height="30"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <Label Content="Könyv Kategoria:" Background="Wheat" Height="50" FontSize="25"/>
+            <TextBox x:Name="tbx_kategoria"  Text="{Binding Kategoria, UpdateSourceTrigger=Explicit}"  Height="30"/>
+        </StackPanel>
+        
+            <CheckBox x:Name="chb_elolvasott" Content="Elolvasott" IsChecked="{Binding Olvasott,UpdateSourceTrigger=Explicit}" FontSize="25" Height="27" Grid.Row="3"/>
+
+
+
+        <Button Grid.Row="4" Content="Mentés" x:Name="btn_mentes" Width="200"  FontSize="26" Click="btn_mentes_Click"/>
+
+
+    </Grid>
+</Window>
