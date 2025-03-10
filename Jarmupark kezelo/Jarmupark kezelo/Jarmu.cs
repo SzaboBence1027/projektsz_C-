@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Jarmupark_kezelo
 {
-    class Jarmu
+   public class Jarmu
     {
         string marka;
         string tipus;

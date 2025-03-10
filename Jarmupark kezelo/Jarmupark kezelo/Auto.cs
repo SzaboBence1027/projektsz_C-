@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Jarmupark_kezelo
 {
-    class Auto : Jarmu, Ikarbantarthato
+   public class Auto : Jarmu, Ikarbantarthato
     {
         int kmOraAllas;
 
