@@ -84,5 +84,30 @@ namespace BankRendszerGUi
             }
 
         }
+
+        private void Tranzakciok_Click(object sender, RoutedEventArgs e)
+        {
+           int forrasszamla;
+           int celszamla;
+           int osszeg ;
+
+            if (!int.TryParse(tbx_forrás_azon.Text, out forrasszamla)) return;
+            if (!int.TryParse(tbx_cél_azon.Text, out celszamla)) return;
+            if (!int.TryParse(tbx_oszeg.Text, out osszeg)) return;
+
+            this.tranzakciok.Add(new Tranzakcio(this.Szamlak[forrasszamla] as Szamla, this.Szamlak[celszamla] as Szamla, osszeg));
+            try
+            {
+                (tranzakciok.Last() as Tranzakcio).Vegrehajt();
+                MessageBox.Show("Sikeres tranzakcio");
+            }
+            catch (NincsElégEgyelnelExeption ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+           
+        }
     }
 }
