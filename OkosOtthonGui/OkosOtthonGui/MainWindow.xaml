@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <StackPanel>
         <ListBox x:Name="lbx_eszkozok" Height="200"/>
-        <ComboBox x:Name="Cbx_parancsok"/>
+        <ComboBox x:Name="Cbx_parancsok"/>  
         <Button x:Name="btn_vegrehajt" Content="Parancs égrehajtása" Margin="20,20,20,0" Click="btn_vegrehajt_Click"/>
     </StackPanel>
 </Window>
