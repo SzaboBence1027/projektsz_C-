@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "orvosi_nobeldijak_gui", "orvosi_nobeldijak_gui\orvosi_nobeldijak_gui.csproj", "{7D4B74CD-A7DF-4ADE-8EDC-3061FDB5A27D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "orvosi_nobeldíjak", "..\orvosi_nobeldíjak\orvosi_nobeldíjak\orvosi_nobeldíjak.csproj", "{1C7994B4-0F45-40FD-AFDE-8A71023CD003}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D4B74CD-A7DF-4ADE-8EDC-3061FDB5A27D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D4B74CD-A7DF-4ADE-8EDC-3061FDB5A27D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D4B74CD-A7DF-4ADE-8EDC-3061FDB5A27D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D4B74CD-A7DF-4ADE-8EDC-3061FDB5A27D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C7994B4-0F45-40FD-AFDE-8A71023CD003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C7994B4-0F45-40FD-AFDE-8A71023CD003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C7994B4-0F45-40FD-AFDE-8A71023CD003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C7994B4-0F45-40FD-AFDE-8A71023CD003}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF6C673B-7DA7-4794-B322-8BCC49E87B4D}
+	EndGlobalSection
+EndGlobal
